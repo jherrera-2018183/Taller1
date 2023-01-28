@@ -1,0 +1,329 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body {
+    background: #000000;
+    color: #000000;
+    background-color: #ffffff;
+      font-family: 'Oswald', sans-serif;
+
+}
+    
+a{
+    color: #000000;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    width:90% ;
+    margin: auto;
+}
+
+/*Navigation*/
+.nav-main {
+    font-size: 17px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+}
+
+.nav-brand{
+    width: 50px;
+}
+
+/*nav left*/
+
+.nav-main ul{
+    display: flex;
+}
+
+.nav-main ul li{
+    padding: 10px;
+}
+.nav-main ul li a{
+    padding: 6px;
+}
+.nav-main ul li a:hover{
+   /* background-color: #c72e13;
+    border-radius: 5px;*/
+    border-bottom: 2px solid #c72e13;
+}
+.nav-main ul.nav-menu{
+flex: 1;
+margin-left: 20px;
+}
+
+.menu-btn{
+    position: absolute;
+    cursor: pointer;
+    top:15px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+}
+/*PORTADA*/
+
+hr{
+    margin: 10px 0;
+}
+.portada{
+    width: 100%;
+    height: 500px;
+    background:url('./img/me-gusta.png') no-repeat center center;
+    padding: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.portadaBiografia{
+    width: 100%;
+    height: 500px;
+    background:url('./img/biografia.png') no-repeat center center;
+    padding: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: #000000;
+}
+.portadaKinal{
+    width: 100%;
+    height: 500px;
+    background:url('https://static.wixstatic.com/media/128120_461471eeba0246faae72fb3f49a57fc8~mv2.jpg/v1/fill/w_1450,h_607,al_c,q_85,enc_auto/128120_461471eeba0246faae72fb3f49a57fc8~mv2.jpg') no-repeat center center;
+    padding: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: rgb(232, 232, 232);
+}
+
+
+.btn{
+    color: #fff !important;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  background:transparent;
+  position: relative;
+  border: 2px solid #c72e13;
+  outline: 1px solid;
+  outline-color: rgba(235, 72, 31, 0.4);
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.btn:before {
+    content:"";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 1s ease;
+  }
+  .btn:hover:before {
+  width: 100%;
+  }
+  
+.btn:hover {
+    box-shadow: inset 0 0 20px rgba(172, 74, 49, 0.5), 0 0 20px rgba(172, 63, 49, 0.4);
+    outline-color: rgba(49, 138, 172, 0);
+    outline-offset: 80px;
+    text-shadow: 1px 1px 6px #fff;
+
+}
+.portada h2,.portada p{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+/*PELIS CARDS*/
+.pelis-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    margin: 10px 0;
+}
+
+.pelis-cards img{
+    width: 100%;
+    height: 180px;
+}
+.pelis-cards h3{
+    margin:10px 0;
+    font-size: 20px;
+}
+.pelis-cards a{
+    padding:10px 0;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+/*BANNER 1*/
+.cards-banner {
+    width: 100%;
+    height: 350px;
+    background: url('https://static.wixstatic.com/media/128120_6d6e0a92febf4c65898b528e77e32441~mv2.png/v1/fill/w_1899,h_389,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/128120_6d6e0a92febf4c65898b528e77e32441~mv2.png') no-repeat center center/cover;
+    margin-bottom: 40px;
+}
+
+.cards-banner .content{
+    width: 40%;
+    padding: 90px 0 0 30px;
+    color: #131468;
+}
+
+.cards-banner p,.cards-banner h2 {
+    margin:10px 0 20px 0;
+}
+
+/*BANNER 2*/
+.cards-banner-two{
+    width: 100%;
+    height: 350px;
+    background: url('./img/banner4.png') no-repeat center center/cover;
+    margin-bottom: 40px;
+}
+.cards-banner-two .content{
+    width: 60%;
+    padding: 100px 0 0 30px;
+    
+
+}
+.cards-banner-two p{
+    background: rgba(43, 4, 114, 0.5);
+}
+.cards-banner-two p,.cards-banner-two h2 {
+    margin:10px 0 20px 0;
+    
+}
+
+/*SOCIAL*/
+
+.social{
+    margin: 50px;
+}
+.social p{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.links a{
+    margin:0 30px;
+}
+
+
+.links a i{
+    font-size:3rem;
+}
+
+/*LINKS*/
+
+.footer-links{
+    background: #ce2b0f96;
+    color: #616161;
+    font-size: 13px;
+    padding :35px 0;
+
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+.footer-container ul{
+    margin :0 auto;
+}
+
+.footer-container ul li{
+    line-height: 2;
+}
+
+.footer{
+    background: #2f3640;
+    color: #e6e9dc;
+    font-size: 12px;
+    padding:20px 0;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+@media(max-width:700px){
+.nav-main ul.nav-menu{
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    background:#2f3640;
+    height:100%;
+    padding:30px;
+    transform: translateX(-400px);
+    opacity:0.9;
+    transition: transform .5s ease-in-out;
+
+}
+.nav-main ul.nav-menu.show {
+   transform: translateX(-20px);
+}
+.nav-main ul.nav-menu-right {
+    margin-right: 40px;
+}
+
+.menu-btn{
+    display: block;
+}
+    .pelis-cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .cards-banner .content,.cards-banner-two .content{
+        width: 80%;
+    }
+    .cards-banner-two .content{
+        padding: 20px;
+    }
+}
+
+@media(max-width:500px){
+    .menu-btn{
+        display: block;
+    }
+    .pelis-cards{
+        grid-template-columns: 1fr;
+    }
+
+    .pelis-cards img{
+        height: 270px;
+    }
+
+    .cards-banner content ,.cards-banner-two content{
+        width: 100%;
+        padding: 60px 20px;
+    }
+
+    .footer-links .footer-container{
+        grid-template-columns: 1fr;
+    }
+   
+}
